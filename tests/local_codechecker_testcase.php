@@ -49,6 +49,12 @@ if (class_exists('PHPUnit_Framework_TestCase')) {
 /**
  * Specialized test case for easy testing of "moodle" CS Sniffs.
  *
+ * If you want to run the tests for the Moodle sniffs, you need to
+ * use the specific command-line:
+ *     vendor/bin/phpunit local/codechecker/moodle/tests/moodlestandard_test.php
+ * no tests for this plugin are run as part of a full Moodle PHPunit run.
+ * (This may be a bug?)
+ *
  * This class mimics {@link AbstractSniffUnitTest} way to test Sniffs
  * allowing easy process of examples and assertion of result expectations.
  *
